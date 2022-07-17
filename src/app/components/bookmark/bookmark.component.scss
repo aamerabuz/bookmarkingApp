@@ -1,0 +1,53 @@
+.bookmark-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 50px;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 15px 5px #cccccc;
+  padding: 10px 10px 10px 5px;
+
+  .bookmark-color{
+    display: inherit;
+    flex: 1;
+    height: 100%;
+    margin-right: 7px;
+  }
+
+  .bookmark-content{
+    display: inherit;
+    flex: 10;
+    flex-direction: column;
+
+    .bookmark-title{
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      a{
+        color: black;
+        text-decoration: none;
+        &:visited{
+          color: black;
+        }
+        &:hover{
+          color: black;
+        }
+        &:focus{
+          color: black;
+        }
+      }
+    }
+
+    .bookmark-descrption{
+      font-size: 1.1rem;
+      color: #706f6f;
+    }
+  }
+
+  .bookmark-actions{
+    display: inherit;
+    flex: 1;
+    justify-content: space-between;
+  }
+}

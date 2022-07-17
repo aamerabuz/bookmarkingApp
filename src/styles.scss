@@ -1,1 +1,156 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0d23;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+button {
+  background-color: #d30180;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.form-section {
+  width: 70%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.select {
+  width: 100%;
+  padding: 7px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #8ab6ec;
+
+  &:hover {
+    border: 1px solid #1b74e4;
+  }
+
+  option {
+    font-size: 1rem;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+}
+
+label {
+  margin-right: 15px;
+}
+
+input {
+  width: 100%;
+  min-width: 130px;
+  padding: 7px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #8ab6ec;
+
+  &:hover {
+    border: 1px solid #1b74e4;
+  }
+
+  &:focus {
+    border: 1px solid #1b74e4;
+  }
+
+  &:focus-visible {
+    border: 1px solid #1b74e4;
+  }
+
+  &:active {
+    border: 1px solid #1b74e4;
+  }
+
+  color: black;
+}
+
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header-title {
+  margin-bottom: 20px;
+}
+
+
+.form-error {
+  color: red;
+  font-size: 1rem;
+}
+
+
+.add-category-container,
+.edit-mark-container,
+.add-mark-container,
+.add-tab-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+app-categorys {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 50%;
+}
+
+app-bookmarks {
+  width: 45%;
+  max-height: 70%;
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+app-add-tab,
+app-add-mark,
+app-add-category,
+app-edit-mark {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 00px;
+}
+
+.navigate-button-container{
+    text-align: center;
+  .navigate-button{
+    background-color: #cccccc47;
+    color: #0a0d23;
+
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 6px 5px rgb(161 155 155 / 28%) ;
+  }
+
+}
+

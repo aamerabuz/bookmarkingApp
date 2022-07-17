@@ -1,0 +1,12 @@
+.bookmark-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+}
+
+.add-bookmark-button {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+}

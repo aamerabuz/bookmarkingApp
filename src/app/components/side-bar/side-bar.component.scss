@@ -1,0 +1,36 @@
+.side-par-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  width: 50%;
+}
+
+
+.tab-container {
+  width: 70%;
+  margin: 7px 10px;
+}
+
+.app-name {
+  font-weight: bold;
+  color: #da0183;
+  margin-top: 0;
+}
+
+.about{
+  font-size: 3em;
+  color: #b9da01;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+.sub-about{
+  font-size: 2em;
+  color: #b9da01;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}

@@ -1,0 +1,31 @@
+  <form (ngSubmit)="addCategorySubmit()" class="form-section" #f="ngForm">
+    <h3 class="text-center header-title">Add New Category</h3>
+
+    <div class="form-group">
+      <label for="cTitle">Title</label>
+      <input required ngModel type="text" id="cTitle" name="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <label for="cDescription">description</label>
+      <input ngModel required type="text" id="cDescription" name="description" placeholder="Description">
+    </div>
+    <div class="form-group">
+      <label for="cColor">Color</label>
+      <select ngModel required id="cColor" name="color" class="select">
+        <option selected disabled>Select Color</option>
+        <option [ngStyle]="{'color':color.value}" *ngFor="let color of colors | keyvalue" value={{color.value}}>
+          {{color.key}}
+        </option>
+      </select>
+    </div>
+    <!-- <div class="form-error" *ngIf="f.submitted && f?.controls?.title?.invalid">
+      <span>All Fields Required</span>
+    </div> -->
+    <div class="form-group align-center">
+      <button type="submit" class="button">Save</button>
+    </div>
+  </form>
+
+  <!-- <pre>
+    {{f.value | json}}
+  </pre> -->

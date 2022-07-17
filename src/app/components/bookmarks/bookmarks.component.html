@@ -1,0 +1,7 @@
+<app-bookmark class="bookmark-container" *ngFor="let bookmark of bookMarks" [bookmark]="bookmark"></app-bookmark>
+<div class="bookmark-container" *ngIf="bookMarks?.length === 0">
+  Click ( + Mark ) Button To Create New mark
+</div>
+<button class="button add-bookmark-button" (click)="onClickAddNewMarkButton()">
+  <fa-icon [icon]="faPlus"></fa-icon> Mark
+</button>

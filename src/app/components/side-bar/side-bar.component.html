@@ -1,0 +1,18 @@
+<section class="side-par-section" *ngIf="!!isLoginStatus">
+  <app-logo class="logo-container"></app-logo>
+  <h4 class="app-name">BookMarking</h4>
+  <button class="button" (click)="onClickAddNewTab()"><fa-icon [icon]="faPlus"></fa-icon> New Tab</button>
+  <h3>All Tabs</h3>
+  <app-tab class="tab-container" *ngFor="let tab of tabs" [tab]="tab"></app-tab>
+</section>
+
+<section class="side-par-section" *ngIf="!isLoginStatus">
+  <app-logo class="logo-container"></app-logo>
+  <h4 class="app-name">BookMarking</h4>
+  <div class="about">
+    Create For You A New Bookmark, It's Easy...
+  </div>
+  <div class="sub-about">
+    If You Do Not Have An Account, Create A New One, It's Easy.
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<!-- <p>{{tab.id}}</p>
+<p>{{tab.title}}</p>
+<p>{{tab.description}}</p>
+<p>{{tab.color}}</p> -->
+
+<section class="tab-section" (click)="onClickTab()">
+  <div class="tab-color" [ngStyle]="{'background-color' : tab.color}"></div>
+  <div class="tab-content" [ngStyle]="{'border-color' : tab.color}">
+    <div class="tab-title">{{tab.title}}</div>
+    <div class="tab-description">{{tab.description}}</div>
+  </div>
+</section>

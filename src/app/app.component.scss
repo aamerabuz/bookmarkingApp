@@ -1,0 +1,22 @@
+.app-container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-container{
+  flex: 1;
+  height: 100vh;
+  color: white;
+}
+
+.dashboard-container{
+  display: flex;
+  flex: 5;
+  height: 90vh;
+  background-color: #f4f5fa;
+  margin: auto 5px;
+  border-radius: 20px;
+}

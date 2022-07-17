@@ -1,0 +1,16 @@
+<section class="bookmark-section">
+  <div class="bookmark-color" [ngStyle]="{'background-color':bookmark.color}"></div>
+  <div class="bookmark-content">
+    <div class="bookmark-title"><a href={{bookmark.url}} target="_blank">{{bookmark.title}}</a></div>
+    <div class="bookmark-descrption">{{bookmark.description}}</div>
+  </div>
+  <div class="bookmark-actions">
+    <div class="bookmark-delete" (click)="deleteBookMark()">
+      <fa-icon [icon]="faTrash"></fa-icon>
+    </div>
+    <div class="bookmark-edit" (click)="editBookMark()">
+      <fa-icon [icon]="faPen"></fa-icon>
+    </div>
+  </div>
+
+</section>

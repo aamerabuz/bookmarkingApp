@@ -1,0 +1,28 @@
+  <form (ngSubmit)="addMarkSubmit()" class="form-section" #f="ngForm">
+    <h3 class="text-center header-title">Add New Mark</h3>
+    <div class="form-group">
+      <label for="mTitle">Title</label>
+      <input ngModel required type="text" id="mTitle" name="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <label for="mDescription">description</label>
+      <input ngModel required type="text" id="mDescription" name="description" placeholder="Description">
+    </div>
+    <div class="form-group">
+      <label for="mUrl">Url</label>
+      <input ngModel required type="text" id="mUrl" name="url" placeholder="https://exmple.com">
+    </div>
+    <div class="form-group">
+      <label for="mColor">Color</label>
+      <select ngModel required id="mColor" name="color" class="select">
+        <option selected disabled>Select Color</option>
+        <option [ngStyle]="{'color':color.value}" *ngFor="let color of colors | keyvalue" value={{color.value}}>
+          {{color.key}}
+        </option>
+      </select>
+      <!-- <input type="text" id="fname" name="fname" placeholder="Color"> -->
+    </div>
+    <div class="form-group align-center">
+      <button class="button">Save</button>
+    </div>
+  </form>

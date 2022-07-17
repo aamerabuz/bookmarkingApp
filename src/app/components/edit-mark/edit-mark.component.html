@@ -1,0 +1,28 @@
+<form (ngSubmit)="updateMarkSubmited()" class="form-section" #f="ngForm">
+  <h3 class="text-center header-title">Edit Mark</h3>
+  <div class="form-group">
+    <label for="mTitle">Title</label>
+    <input required type="text" id="mTitle"  name="title" [(ngModel)]="mark.title">
+  </div>
+  <div class="form-group">
+    <label for="mDescription">description</label>
+    <input [(ngModel)]="mark.description" required type="text" id="mDescription" name="description" />
+  </div>
+  <div class="form-group">
+    <label for="mUrl">Url</label>
+    <input required type="text" id="mUrl" name="url" [(ngModel)]="mark.url">
+  </div>
+  <div class="form-group">
+    <label for="mColor">Color</label>
+    <select [(ngModel)]="mark.color" required id="mColor" name="color" class="select">
+      <option [ngStyle]="{'color':color.value}" *ngFor="let color of colors | keyvalue" value={{color.value}} [selected]="mark?.color === color.value">
+        {{color.key}}
+      </option>
+    </select>
+    <!-- <input type="text" id="fname" name="fname" placeholder="Color"> -->
+  </div>
+  <input type="text" [(ngModel)]="mark._id" hidden name="id" />
+  <div class="form-group align-center">
+    <button class="button">Save</button>
+  </div>
+</form>

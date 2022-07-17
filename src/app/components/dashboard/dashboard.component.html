@@ -1,0 +1,15 @@
+<section class="dashboard-section" >
+    <div class="permalink" *ngIf="!!isLoginStatus">
+      <fa-icon [icon]="faHouse"></fa-icon><span class="title"> / {{plTabTitle}} / {{plCategoryTitle}}</span>
+    </div>
+    <div class="logOutButton" (click)="logoutUser()" *ngIf="!!isLoginStatus">
+      <fa-icon [icon]="faSignOut"></fa-icon>
+    </div>
+    <router-outlet></router-outlet>
+    <!-- <app-categorys class="categories-container"></app-categorys> -->
+    <!-- <app-bookmarks class="bookmarks-container"></app-bookmarks> -->
+    <!-- <app-add-tab class="add-tab-container"></app-add-tab> -->
+    <!-- <app-add-mark class="add-mark-container"></app-add-mark> -->
+    <!-- <app-add-category class="add-category-container"></app-add-category> -->
+    <!-- <app-edit-mark class="edit-mark-container"></app-edit-mark> -->
+</section>
